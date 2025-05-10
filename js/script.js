@@ -1,11 +1,4 @@
-window.onload = console.log("Hi!")
-
-click = 0
-
-function test(){
-  click++
-}
-
-function clicks(){
-  console.log(click)
-}
+document.getElementById("clickMeBtn").addEventListener("click", function () {
+  const message = document.getElementById("message");
+  message.textContent = "Thanks for clicking!";
+});
